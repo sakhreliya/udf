@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function A(angle1, angle2, angle3) {
+            return angle1 + angle2 + angle3 === 180;
+        }
+
+        var angle1 =parseFloat(prompt("enter frist angle"));
+        var angle2 =parseFloat(prompt("enter second angle")); 
+        var angle3 =parseFloat(prompt("enter third angle")); 
+
+        if (A(angle1, angle2, angle3)) {
+            console.log("triangle is valid.");
+        } else {
+            console.log("triangle is not valid.");
+        }
+    </script>
+</body>
+</html>
+

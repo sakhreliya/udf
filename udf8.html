@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculate() {
+            var a = parseFloat(prompt("Enter a frist number:"));
+            var b = parseFloat(prompt("Enter a second number:"));
+            var choice = prompt("Select an operation (+, -, *, /):");
+            var result;
+
+            switch (choice) {
+                case '+':
+                    result = a + b;
+                    break;
+                case '-':
+                    result = a - b;
+                    break;
+                case '*':
+                    result = a * b;
+                    break;
+                case '/':
+                    if (b !== 0) {
+                        result = a / b;
+                    } else {
+                        result = "Zero is not allowed.";
+                    }
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+
+            console.log(choice);
+            console.log("Ans =", result);
+        }
+
+        calculate(); 
+    </script>
+</body>
+
+</html>
